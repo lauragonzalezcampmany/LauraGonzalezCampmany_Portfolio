@@ -69,8 +69,8 @@
       </div>
     </div>
   </section>
-  <main>
-      <section class="about-me">
+  <main id="main-sec">
+      <section id="about-me">
         <article>
           <h2>Hello!</h2>
           <p>
@@ -78,7 +78,7 @@
             3D modeling, graphic design, and illustration. I love bringing my
             creative visions to life!
           </p>
-          <button class="button" onclick="window.location.href='#portfolio-start'"><span>Go to Portfolio</span></button>
+          <button class="button" onclick="goToPortfolio()"><span>Go to Portfolio</span></button>
         </article>
         <figure>
           <div class="about-me-picture">
@@ -104,13 +104,14 @@
     </p>
   </footer>
   <script>
-    // Remove the fragment identifier from the URL when the page is loaded
-    window.addEventListener('load', function() {
-        if (window.location.hash === '#portfolio-start') {
-            history.replaceState({}, document.title, window.location.pathname + window.location.search);
-        }
+    window.addEventListener('load', (event) => {
+      document.getElementById('main-sec').scrollIntoView(true);
     });
-</script>
+
+    function goToPortfolio() {
+      document.getElementById('portfolio-start').scrollIntoView(true);
+    }
+  </script>
 </body>
 
 </html>
