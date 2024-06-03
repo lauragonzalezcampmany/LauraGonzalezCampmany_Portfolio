@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+
+/*Fonts*/
+
+.cousine-regular {
+  font-family: "Cousine", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 1000*/
+
+.dm-sans-normal {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #000000;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-family: "DM Sans";
+  font-weight: 800;
+  font-size: 1rem;
+  color: #000000;
+}
+
+#nav-header a {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Lower the opacity on hover */
+#nav-header a:hover {
+  opacity: 0.5;
+}
+
+#nav-bar {
+  width: 100%;
+  position: fixed;
+  padding: 1.7% 2% 1.8% 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.362);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: stretch;
+  height: 12vh;
+  background-color: #ffffffb3;
+}
+
+#nav-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: stretch;
+}
+
+#nav-elements {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  align-items: center;
+  justify-items: center;
+  gap: 2em;
+  text-transform: uppercase;
+  font-family: "DM Sans";
+  font-weight: 1000;
+  font-size: 0.8em;
+  padding: 1%;
+}
+
+.Social-media {
+  display: grid;
+  justify-content: end;
+  grid-auto-flow: column;
+  gap: 2em;
+}
+
+.Social-media a {
+  display: grid;
+  background: #ffffff;
+  height: 1.8em;
+  width: 1.8em;
+  border-radius: 5%;
+  place-items: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(37, 37, 37, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.362);
+  transition: all 0.3s ease-in;
+  position: relative;
+  overflow: hidden;
+}
+
+.Social-media a i {
+  font-size: 1.2em;
+  color: #000000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Social-media a:hover {
+  box-shadow: inset 4px 4px 6px -2px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px -1px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  transform: translateY(2px);
+}
+
+.Social-media a:hover i {
+  transform: scale(0.9);
+  position: relative;
+  z-index: 1;
+}
+
+.Social-media a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.Social-media a:hover .filled {
+  height: 100%;
+}
+
+a:hover .fa-behance {
+  color: #ffffff;
+}
+
+a:hover .fa-linkedin {
+  color: #ffffff;
+}
+
+#nav-elements a {
+  color: #000000;
+  text-decoration: none;
+  margin: 1px;
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease-in;
+}
+
+#nav-elements a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+#nav-elements a:hover {
+  color: #ec576B;
+}
+
+#nav-elements a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+/*main*/
+
+main {
+  margin: 0 auto;
+  padding: 5% 10%;
+  border-top: 12vh solid #ffffff;
+  width: 100%;
+}
+
+.about-me {
+  margin: 0 auto;
+  padding: 2% 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: fit-content;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-me article h2 {
+  text-transform: capitalize;
+  font-family: "DM Sans";
+  font-weight: 1000;
+  font-size: 5em;
+  color: #4ec5c1;
+}
+
+.about-me article p {
+  font-family: "Cousine";
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #000000;
+  padding-bottom: 2em;
+}
+
+.about-me-picture {
+  object-fit: contain;
+  display: block;
+  width: 35vw;
+  background-image: radial-gradient(
+      circle 140px at 180px 250px,
+      rgba(236, 87, 107, 0.768032212885154) 0%,
+      rgba(229, 227, 88, 0.4234943977591037) 80%,
+      #ffffff00
+    ),
+    radial-gradient(
+      circle 120px at 360px 130px,
+      rgba(236, 87, 107, 0.768032212885154) 0%,
+      rgba(229, 227, 88, 0.4234943977591037) 80%,
+      #ffffff00
+    );
+}
+
+.about-me-picture img {
+  width: 100%;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+  text-transform: uppercase;
+  font-family: "DM Sans";
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #000000;
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+  background-color: #e5e338
+};
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+
+
+/*portfolio*/
+#portfolio-start{
+  text-transform: uppercase;
+  font-family: "DM Sans";
+  font-weight: 800;
+  font-size: 0.8em;
+  color: #000000;
+  text-align: center;
+  padding: 5% 0 5% 0;
+}
+#portfolio-start h2 {
+  text-transform: uppercase;
+  font-family: "DM Sans";
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #000000;
+  text-align: center;
+  padding: 10% 0 5% 0;
+}
+.portfolio-containers {
+  margin: 0 auto;
+  padding: 5% 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  object-fit: contain;
+  display: block;
+  width: 25vw;
+  background-color: #e5e338;
+  padding: 1%;
+  border: 1px solid #000000;
+  margin: 5% 2.5%;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/*Expanded*/
+
+/*footer*/
+footer p {
+  text-align: center;
+  font-family: "DM Sans";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: #000000;
+  border-top: 1px solid #000000;
+  padding: 2% 0;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Laura Gonzalez Campmany | Portfolio</title>
+  <meta name="description"
+    content="Laura Gonzalez Campmany, 21, is a multifaceted artist with expertise in 3d modeling, graphic design and illustration." />
+  <meta name="keyword"
+    content="Laura GC, portfolio, 3D, 2D, 3d modeling, artist, graphic, art, graphic design, designer, Brussels, Belgium" />
+  <meta name="author" content="Laura Gonzalez Campmany" />
+  <meta name="geo.region" content="BE-WHT" />
+  <meta name="geo.placename" content="Brussels" />
+  <link rel="canonical" href="https://github.com/lauragonzalezcampmany/Laura_Gonzalez_Campmany_Portfolio" />
+  <!-- Links -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="script" href="script.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://github.com/lauragonzalezcampmany/Laura_Gonzalez_Campmany_Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Laura Gonzalez Campmany | Portfolio" />
+  <meta property="og:description"
+    content="Laura Gonzalez Campmany, 21, is a multifaceted artist with expertise in 3d modeling, graphic design and illustration." />
+  <meta property="og:image"
+    content="https://opengraph.githubassets.com/3e45c22d584a37032f101699c74993620ed2997376324f46f2d6da7f7df14f2d/lauragonzalezcampmany/Portfolio" />
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="github.com" />
+  <meta property="twitter:url" content="https://github.com/lauragonzalezcampmany/Laura_Gonzalez_Campmany_Portfolio" />
+  <meta name="twitter:title" content="Laura Gonzalez Campmany | Portfolio" />
+  <meta name="twitter:description"
+    content="Laura Gonzalez Campmany, 21, is a multifaceted artist with expertise in 3d modeling, graphic design and illustration." />
+  <meta name="twitter:image"
+    content="https://opengraph.githubassets.com/3e45c22d584a37032f101699c74993620ed2997376324f46f2d6da7f7df14f2d/lauragonzalezcampmany/Portfolio" />
+</head>
+
+<body>
+  <section id="nav-bar">
+    <header id="nav-header">
+      <a href="index.html">
+        <h1>Laura Gonzalez Campmany</h1>
+      </a>
+    </header>
+    <div id="nav-links">
+      <div class="nav-menu">
+        <nav id="nav-elements">
+          <a href="#nav-bar">Home</a>
+          <a href="#portfolio-start">Portfolio</a>
+          <a href="#Contact">Contact</a>
+        </nav>
+      </div>
+      <div class="Social-media">
+        <a href="https://www.behance.net/lauragonzale40">
+          <font color="#333333"><i class="fab fa-behance"></i></font>
+          <div class="filled"></div>
+        </a>
+        <a href="https://www.linkedin.com/in/laura-gonzalez-campmany-45606a292/">
+          <font color="#333333"><i class="fab fa-linkedin"></i></font>
+          <div class="filled"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <main>
+      <section class="about-me">
+        <article>
+          <h2>Hello!</h2>
+          <p>
+            I'm Laura. An artist based in Brussels, Belgium, I'm specialized in
+            3D modeling, graphic design, and illustration. I love bringing my
+            creative visions to life!
+          </p>
+          <button class="button" onclick="window.location.href='#portfolio-start'"><span>Go to Portfolio</span></button>
+        </article>
+        <figure>
+          <div class="about-me-picture">
+            <img src="img/replace.png" alt="Caricature of Laura" />
+          </div>
+        </figure>
+      </section>
+    <section id="portfolio-start">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-containers">
+        <div class="project">
+          <img src="img/replace.png" alt="" />
+          <div clas="more-pictures"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      © 2024 Laura Gonzalez Campmany | All Rights Reserved <br />
+      If you are using a screen reader and are having problems using this
+      website, please email lauragonzalezcampmany@gmail.com
+    </p>
+  </footer>
+  <script>
+    // Remove the fragment identifier from the URL when the page is loaded
+    window.addEventListener('load', function() {
+        if (window.location.hash === '#portfolio-start') {
+            history.replaceState({}, document.title, window.location.pathname + window.location.search);
+        }
+    });
+</script>
+</body>
+
+</html>
