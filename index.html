@@ -3,14 +3,14 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK9HL0BJ6Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK9HL0BJ6Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-SK9HL0BJ6Y');
-</script>
+    gtag('config', 'G-SK9HL0BJ6Y');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -60,9 +60,9 @@
     <div id="nav-links">
       <div class="nav-menu">
         <nav id="nav-elements">
-          <a href="#nav-bar">Home</a>
+          <a href="#">Home</a>
           <a href="#portfolio-start">Portfolio</a>
-          <a href="#Contact">Contact</a>
+          <a href="#footer">Contact</a>
         </nav>
       </div>
       <div class="Social-media">
@@ -78,33 +78,131 @@
     </div>
   </section>
   <main id="main-sec">
-      <section id="about-me">
-        <article>
-          <h2>Hello!</h2>
-          <p>
-            I'm Laura. An artist based in Brussels, Belgium, I'm specialized in
-            3D modeling, graphic design, and illustration. I love bringing my
-            creative visions to life!
-          </p>
-          <button class="button" onclick="goToPortfolio()"><span>Go to Portfolio</span></button>
-        </article>
-        <figure>
-          <div class="about-me-picture">
-            <img src="img/replace.png" alt="Caricature of Laura" />
-          </div>
-        </figure>
-      </section>
+    <section id="about-me">
+      <article>
+        <h2>Hello!</h2>
+        <p>
+          I'm Laura. An artist based in Brussels, Belgium, I'm specialized in
+          3D modeling, graphic design, and illustration. I love bringing my
+          creative visions to life!
+        </p>
+        <button class="me-button" onclick="goToPortfolio()"><span>Go to Portfolio</span></button>
+      </article>
+      <figure>
+        <div class="about-me-picture">
+          <img src="img/replace.png" alt="Caricature of Laura">
+        </div>
+      </figure>
+    </section>
     <section id="portfolio-start">
       <h2>My Portfolio</h2>
       <div class="portfolio-containers">
-        <div class="project">
-          <img src="img/replace.png" alt="" />
-          <div clas="more-pictures"></div>
+        <div class="project-cells">
+          <div class="project">
+            <img src="img/Camera_render.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
+            <button class="project-button" onclick="on(0)">More info</button>
+            <p>3d model | Vintage Polaroid Camera</p>
+          </div>
+          <div class="project-overlay" id="overlay-0" onclick="off(0)">
+            <div class="pictures-slider">
+              <img src="img/Camera_render.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
+              <img src="img/Camera_closeup.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
+              <img src="img/Camera_occlusion.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera in occlusion mode">
+            </div>
+            <div class="caption">
+              <h3>3d model | Vintage Polaroid Camera</h3>
+              <p>A 3d model of a Polaroid 600 land camera.<br>Softwares used: Autodesk Maya, Adobe Substance 3D Painter.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="project-cells">
+          <div class="project">
+            <img src="img/beats_1.webp" alt="Rendering of 3D modeled beats headphones">
+            <button class="project-button" onclick="on(1)">More info</button>
+            <p>3d model | Beats Studio 3</p>
+          </div>
+          <div class="project-overlay" id="overlay-1" onclick="off(1)">
+            <div class="pictures-slider">
+              <img src="img/beats_1.webp" alt="Rendering of 3D modeled beats headphones">
+              <img src="img/beats_2.webp" alt="Rendering of 3D modeled beats headphones">
+              <img src="img/beats_3.webp" alt="Rendering of 3D modeled beats headphones">
+            </div>
+            <div class="caption">
+              <h3>3d model | Beats Studio 3</h3>
+              <p>A 3d model of Beats Studio 3 Headphones.<br>Softwares used: Keyshot, Rhinoceros.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-cells">
+          <div class="project">
+            <img src="img/xbox_sanrio_1.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+            <button class="project-button" onclick="on(2)">More info</button>
+            <p>3d model | Xbox</p>
+          </div>
+          <div class="project-overlay" id="overlay-2" onclick="off(2)">
+            <div class="pictures-slider">
+              <img src="img/xbox_sanrio_1.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img src="img/xbox_sanrio_2.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img src="img/xbox_sanrio_3.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img src="img/xbox_1.webp" alt="Rendering of 3D modeled xbox">
+              <img src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
+              <img src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
+            </div>
+            <div class="caption">
+              <h3>3d model | Xbox</h3>
+              <p>A 3d model of an xbox and another costumised xbox based on the sanrio character Hello Kitty.<br>Softwares used: Keyshot, Rhinoceros.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-cells">
+          <div class="project">
+            <img src="img/house_1.webp" alt="Rendering of 3D modeled house">
+            <button class="project-button" onclick="on(3)">More info</button>
+            <p>3d model | House</p>
+          </div>
+          <div class="project-overlay" id="overlay-3" onclick="off(3)">
+            <div class="pictures-slider">
+              <img src="img/houseOcclusion_1.webp" alt="Rendering of 3D modeled house in occlusion mode">
+              <img src="img/houseOcclusion_2.webp" alt="Rendering of 3D modeled house in occlusion mode">
+              <img src="img/houseOcclusion_3.webp" alt="Rendering of 3D modeled house in occlusion mode">
+              <img src="img/house_1.webp" alt="Rendering of 3D modeled house">
+              <img src="img/house_2.webp" alt="Rendering of 3D modeled house">
+              <img src="img/house_3.webp" alt="Rendering of 3D modeled house">
+              <img src="img/house_4.webp" alt="Rendering of 3D modeled house">
+            </div>
+            <div class="caption">
+              <h3>3d model | House</h3>
+              <p>A 3d model of a house that was modeled based on floor plans on AutoCAD and rendered after in Maya and TwinMotion.<br>Softwares used: Autodesk Maya, TwinMotion, Autodesk AutoCAD, MicroStation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-cells">
+          <div class="project">
+            <img src="img/basquiatwarhol_expo_1.webp" alt="Basquiat X Walhol esposition poster">
+            <button class="project-button" onclick="on(4)">More info</button>
+            <p>Poster & Brochure | Basquiat X Walhol Exposition</p>
+          </div>
+          <div class="project-overlay" id="overlay-4" onclick="off(4)">
+            <div class="pictures-slider">
+              <img src="img/basquiatwarhol_expo_1.webp" alt="Basquiat X Walhol esposition poster">
+              <img src="img/basquiatwarhol_expo_2.webp" alt="Basquiat X Walhol esposition brochure">
+              <img src="img/basquiatwarhol_expo_3.webp" alt="Basquiat X Walhol esposition poster">
+              <img src="img/basquiatwarhol_expo_4.webp" alt="Basquiat X Walhol esposition brochure">
+            </div>
+            <div class="caption">
+              <h3>Poster & Brochure | Basquiat X Walhol Exposition</h3>
+              <p>A poster and a brochure made based on a museum exposition by Warhol and Basquiat.<br>Softwares used: Adobe Illustrator, Adobe Photoshop.
+              </p>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
-  <footer>
+  <footer id="footer">
     <p>
       © 2024 Laura Gonzalez Campmany | All Rights Reserved <br />
       If you are using a screen reader and are having problems using this
@@ -118,6 +216,13 @@
 
     function goToPortfolio() {
       document.getElementById('portfolio-start').scrollIntoView(true);
+    }
+
+    function on(overlayNumber) {
+      document.getElementById("overlay-" + overlayNumber).style.display = "grid";
+    }
+    function off(overlayNumber) {
+      document.getElementById("overlay-" + overlayNumber).style.display = "none";
     }
   </script>
 </body>
