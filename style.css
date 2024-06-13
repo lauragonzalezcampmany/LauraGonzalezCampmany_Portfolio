@@ -46,7 +46,6 @@ body {
 
 .dm-sans-normal {
   font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
@@ -502,8 +501,6 @@ main {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
-  /*font-size: 0;*/
 }
 
 #overlay-5 .pictures-slider {
@@ -569,15 +566,6 @@ footer p {
     scrollbar-width: none;
     /* For Firefox */
     -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
-
-    /* For webkit browsers like Chrome and Safari */
-    &::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
-
-    /*font-size: 0;*/
   }
 }
 
