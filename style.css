@@ -131,12 +131,16 @@ h1 {
   transition: all 0.3s ease-in;
   position: relative;
   overflow: hidden;
+  justify-content: center;
+  color: #ffffff;
+  
 }
 
 .Social-media a i {
   font-size: 1.2em;
   color: #000000;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;top: 25%;
+  position: relative;
 }
 
 .Social-media a:hover {
@@ -215,6 +219,7 @@ main {
   padding: 5% 10%;
   border-top: 12vh solid #ffffff;
   width: 100%;
+  background-color: #ffffff;
 }
 
 #about-me {
