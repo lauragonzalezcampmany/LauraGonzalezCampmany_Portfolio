@@ -132,15 +132,19 @@ h1 {
   position: relative;
   overflow: hidden;
   justify-content: center;
-  color: #ffffff;
+  /*color: #ffffff;*/
   
+}
+.Social-media a span{
+  display: none;
 }
 
 .Social-media a i {
   font-size: 1.2em;
   color: #000000;
-  transition: transform 0.3s ease-in-out;top: 25%;
-  position: relative;
+  transition: transform 0.3s ease-in-out;
+  /*top: 25%;
+  position: relative;*/
 }
 
 .Social-media a:hover {
@@ -237,7 +241,7 @@ main {
   font-family: "DM Sans";
   font-weight: 1000;
   font-size: 5em;
-  color: #4ec5c1;
+  color: #ec576b;
 }
 
 #about-me article p {
