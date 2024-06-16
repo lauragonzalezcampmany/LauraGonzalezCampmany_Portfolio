@@ -18,10 +18,10 @@
   <meta name="geo.region" content="BE-WHT">
   <meta name="geo.placename" content="Brussels">
   <link rel="canonical" href="https://lauragonzalezcampmany.github.io/LauraGonzalezCampmany_Portfolio/">
-  
+
   <!-- Links -->
   <link rel="stylesheet" href="style.min.css">
-  <link rel="preload" as="image" href="img/cat.webp">>
+  <link rel="preload" as="image" href="img/cat.webp">
   <link rel="preload" as="image" href="img/basquiatwarhol_cover.webp">
   <link rel="preload" as="image" href="img/house_cover.webp">
   <link rel="preload" as="image" href="img/KineticTypo_cover.webp">
@@ -30,10 +30,12 @@
   <link rel="preload" as="image" href="img/Camera_cover.webp">
 
   <!-- Lazy Loading FontAwesome for Speed-->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
 
   <!-- Lite Youtube Embeds -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.js" defer></script>
 
   <!-- Facebook Meta Tags -->
@@ -64,16 +66,16 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK9HL0BJ6Y"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK9HL0BJ6Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-SK9HL0BJ6Y');
-    </script>
-  </head>
+    gtag('config', 'G-SK9HL0BJ6Y');
+  </script>
+</head>
 
 <body>
   <section id="nav-bar">
@@ -99,7 +101,7 @@
         <a href="https://www.linkedin.com/in/laura-gonzalez-campmany-45606a292/">
           <i class="fab fa-linkedin"></i>
           <div class="filled"></div>
-           <span>linkedin</span>
+          <span>linkedin</span>
         </a>
       </div>
     </div>
@@ -189,9 +191,12 @@
                 </span>
                 <span>Scroll Down</span>
               </div>
-              <img loading="lazy" src="img/xbox_sanrio_1.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
-              <img loading="lazy" src="img/xbox_sanrio_2.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
-              <img loading="lazy" src="img/xbox_sanrio_3.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img loading="lazy" src="img/xbox_sanrio_1.webp"
+                alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img loading="lazy" src="img/xbox_sanrio_2.webp"
+                alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img loading="lazy" src="img/xbox_sanrio_3.webp"
+                alt="Rendering of 3D modeled xbox inspired by hello kitty">
               <img loading="lazy" src="img/xbox_1.webp" alt="Rendering of 3D modeled xbox">
               <img loading="lazy" src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
               <img loading="lazy" src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
@@ -263,13 +268,15 @@
         </div>
         <div class="project-cells">
           <div class="project">
-            <img loading="lazy" src="img/KineticTypo_cover.webp" alt="Fly me to the moon kinetic typography video cover">
+            <img loading="lazy" src="img/KineticTypo_cover.webp"
+              alt="Fly me to the moon kinetic typography video cover">
             <button class="project-button" onclick="on(5)">More info</button>
             <p>Fly Me to the Moon | Kinetic Typography</p>
           </div>
           <div class="project-overlay" id="overlay-5" onclick="off(5)">
             <div class="pictures-slider">
-              <lite-youtube style="height:100%; width:100%" videoid="P-B-qz7yBdw" playlabel="Play: FLY ME TO THE MOON | kinetic typography" js-api></lite-youtube>
+              <lite-youtube style="height:100%; width:100%" videoid="P-B-qz7yBdw"
+                playlabel="Play: FLY ME TO THE MOON | kinetic typography" js-api></lite-youtube>
             </div>
             <div class="caption">
               <h3>Fly Me to the Moon | Kinetic Typography</h3>
@@ -303,7 +310,7 @@
     function stopAllYoutubeVideos() {
       document.querySelectorAll('lite-youtube').forEach(result => {
         result.getYTPlayer().then(player => {
-          if(player)
+          if (player)
             player.pauseVideo();
         });
       });
