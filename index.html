@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <!-- Preload expensive things -->
+  <link rel="preload" fetchpriority="high" as="image" href="img/cat.webp" type="image/webp">
+  <link rel="preload" fetchpriority="high" as="style" href="style.css">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK9HL0BJ6Y"></script>
   <script>
@@ -25,17 +29,27 @@
   <meta name="geo.placename" content="Brussels">
   <link rel="canonical" href="https://lauragonzalezcampmany.github.io/LauraGonzalezCampmany_Portfolio/">
   
+  <!-- Preload expensive images -->
+  <link rel="preload" fetchpriority="high" as="image" href="img/cat.webp" type="image/webp">
+
   <!-- Links -->
   <link rel="stylesheet" href="style.css">
   <link rel="script" href="script.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
+
+  <!-- Lazy Loading FontAwesome for Speed-->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Lite Youtube Embeds -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.js" defer></script>
+
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://lauragonzalezcampmany.github.io/LauraGonzalezCampmany_Portfolio/>
+  <meta property="og:url" content="https://lauragonzalezcampmany.github.io/LauraGonzalezCampmany_Portfolio/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Laura Gonzalez Campmany | Portfolio">
   <meta property="og:description"
@@ -51,7 +65,17 @@
     content="Laura Gonzalez Campmany, 21, is a multifaceted artist with expertise in 3d modeling, graphic design and illustration.">
   <meta name="twitter:image"
     content="https://opengraph.githubassets.com/3e45c22d584a37032f101699c74993620ed2997376324f46f2d6da7f7df14f2d/lauragonzalezcampmany/Portfolio">
-</head>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Person",
+      "name": "Laura Gonzalez Campmany",
+      "jobTitle": "Artist",
+      "email": "lauragonzalezcampmany@gmail.com",
+      "url": "https://lauragonzalezcampmany.github.io/LauraGonzalezCampmany_Portfolio/"
+    }
+    </script>
+  </head>
 
 <body>
   <section id="nav-bar">
@@ -86,7 +110,7 @@
     <div id="about-me">
       <figure>
         <div class="about-me-picture">
-          <img src="img/cat.png" alt="Greeting cat drawing made by lauragonzalezcampmany">
+          <img src="img/cat.webp" alt="Greeting cat drawing made by lauragonzalezcampmany">
         </div>
       </figure>
       <article>
@@ -116,9 +140,9 @@
                 </span>
                 <span>Scroll Down</span>
               </div>
-              <img src="img/Camera_render.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
-              <img src="img/Camera_closeup.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
-              <img src="img/Camera_occlusion.webp"
+              <img loading="lazy" src="img/Camera_render.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
+              <img loading="lazy" src="img/Camera_closeup.webp" alt="Rendering of a 3D modeled Vintage Polaroid Camera">
+              <img loading="lazy" src="img/Camera_occlusion.webp"
                 alt="Rendering of a 3D modeled Vintage Polaroid Camera in occlusion mode">
             </div>
             <div class="caption">
@@ -142,9 +166,9 @@
                 </span>
                 <span>Scroll Down</span>
               </div>
-              <img src="img/beats_1.webp" alt="Rendering of 3D modeled beats headphones">
-              <img src="img/beats_2.webp" alt="Rendering of 3D modeled beats headphones">
-              <img src="img/beats_3.webp" alt="Rendering of 3D modeled beats headphones">
+              <img loading="lazy" src="img/beats_1.webp" alt="Rendering of 3D modeled beats headphones">
+              <img loading="lazy" src="img/beats_2.webp" alt="Rendering of 3D modeled beats headphones">
+              <img loading="lazy" src="img/beats_3.webp" alt="Rendering of 3D modeled beats headphones">
             </div>
             <div class="caption">
               <h3>3d model | Beats Studio 3</h3>
@@ -167,12 +191,12 @@
                 </span>
                 <span>Scroll Down</span>
               </div>
-              <img src="img/xbox_sanrio_1.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
-              <img src="img/xbox_sanrio_2.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
-              <img src="img/xbox_sanrio_3.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
-              <img src="img/xbox_1.webp" alt="Rendering of 3D modeled xbox">
-              <img src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
-              <img src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
+              <img loading="lazy" src="img/xbox_sanrio_1.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img loading="lazy" src="img/xbox_sanrio_2.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img loading="lazy" src="img/xbox_sanrio_3.webp" alt="Rendering of 3D modeled xbox inspired by hello kitty">
+              <img loading="lazy" src="img/xbox_1.webp" alt="Rendering of 3D modeled xbox">
+              <img loading="lazy" src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
+              <img loading="lazy" src="img/xbox_2.webp" alt="Rendering of 3D modeled xbox">
             </div>
             <div class="caption">
               <h3>3d model | Xbox</h3>
@@ -196,13 +220,13 @@
                 </span>
                 <span>Scroll Down</span>
               </div>
-              <img src="img/houseOcclusion_1.webp" alt="Rendering of 3D modeled house in occlusion mode">
-              <img src="img/houseOcclusion_2.webp" alt="Rendering of 3D modeled house in occlusion mode">
-              <img src="img/houseOcclusion_3.webp" alt="Rendering of 3D modeled house in occlusion mode">
-              <img src="img/house_1.webp" alt="Rendering of 3D modeled house">
-              <img src="img/house_2.webp" alt="Rendering of 3D modeled house">
-              <img src="img/house_3.webp" alt="Rendering of 3D modeled house">
-              <img src="img/house_4.webp" alt="Rendering of 3D modeled house">
+              <img loading="lazy" src="img/houseOcclusion_1.webp" alt="Rendering of 3D modeled house in occlusion mode">
+              <img loading="lazy" src="img/houseOcclusion_2.webp" alt="Rendering of 3D modeled house in occlusion mode">
+              <img loading="lazy" src="img/houseOcclusion_3.webp" alt="Rendering of 3D modeled house in occlusion mode">
+              <img loading="lazy" src="img/house_1.webp" alt="Rendering of 3D modeled house">
+              <img loading="lazy" src="img/house_2.webp" alt="Rendering of 3D modeled house">
+              <img loading="lazy" src="img/house_3.webp" alt="Rendering of 3D modeled house">
+              <img loading="lazy" src="img/house_4.webp" alt="Rendering of 3D modeled house">
             </div>
             <div class="caption">
               <h3>3d model | House</h3>
@@ -226,10 +250,10 @@
                 </span>
                 <span>Scroll Down</span>
               </div>
-              <img src="img/basquiatwarhol_expo_1.webp" alt="Basquiat X Walhol esposition poster">
-              <img src="img/basquiatwarhol_expo_2.webp" alt="Basquiat X Walhol esposition brochure">
-              <img src="img/basquiatwarhol_expo_3.webp" alt="Basquiat X Walhol esposition poster">
-              <img src="img/basquiatwarhol_expo_4.webp" alt="Basquiat X Walhol esposition brochure">
+              <img loading="lazy" src="img/basquiatwarhol_expo_1.webp" alt="Basquiat X Walhol esposition poster">
+              <img loading="lazy" src="img/basquiatwarhol_expo_2.webp" alt="Basquiat X Walhol esposition brochure">
+              <img loading="lazy" src="img/basquiatwarhol_expo_3.webp" alt="Basquiat X Walhol esposition poster">
+              <img loading="lazy" src="img/basquiatwarhol_expo_4.webp" alt="Basquiat X Walhol esposition brochure">
             </div>
             <div class="caption">
               <h3>Poster & Brochure | Basquiat X Walhol Exposition</h3>
@@ -241,16 +265,13 @@
         </div>
         <div class="project-cells">
           <div class="project">
-            <img src="img/KineticTypo_cover.webp" alt="Fly me to the moon kinetic typography video cover">
+            <img loading="lazy" src="img/KineticTypo_cover.webp" alt="Fly me to the moon kinetic typography video cover">
             <button class="project-button" onclick="on(5)">More info</button>
             <p>Fly Me to the Moon | Kinetic Typography</p>
           </div>
           <div class="project-overlay" id="overlay-5" onclick="off(5)">
             <div class="pictures-slider">
-              <iframe style="width:100%; height:100%"
-                src="https://www.youtube.com/embed/P-B-qz7yBdw?si=isxTpn6iewkQqpFJ?enablejsapi=1" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <lite-youtube style="height:100%; width:100%" videoid="P-B-qz7yBdw" playlabel="Play: FLY ME TO THE MOON | kinetic typography" js-api></lite-youtube>
             </div>
             <div class="caption">
               <h3>Fly Me to the Moon | Kinetic Typography</h3>
@@ -282,10 +303,11 @@
     }
 
     function stopAllYoutubeVideos() {
-      document.querySelectorAll('iframe').forEach(iframe => { 
-        var src = iframe.src;
-        iframe.src = "";
-        iframe.src = src;
+      document.querySelectorAll('lite-youtube').forEach(result => {
+        result.getYTPlayer().then(player => {
+          if(player)
+            player.pauseVideo();
+        });
       });
     }
 
@@ -295,7 +317,10 @@
     }
 
     function off(overlayNumber) {
-      document.getElementById("overlay-" + overlayNumber).style.display = "none";
+      var overlay = document.getElementById("overlay-" + overlayNumber);
+      if (overlay.querySelector('.pictures-slider').matches(':hover'))
+        return;
+      overlay.style.display = "none";
       document.body.style.overflow = "";
       stopAllYoutubeVideos();
     }
