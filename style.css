@@ -265,7 +265,7 @@ main {
   align-items: center;
 }
 
-#about-me article h2 {
+#about-me-hello {
   text-transform: capitalize;
   font-family: "DM Sans";
   font-weight: 1000;
@@ -273,7 +273,7 @@ main {
   color: #ec576b;
 }
 
-#about-me article p {
+#about-me-desc {
   font-family: "Cousine";
   font-weight: 500;
   font-size: 1.2em;
@@ -503,7 +503,7 @@ main {
   margin: 6vh 0;
 }
 
-.caption h3 {
+.caption-title {
   text-transform: uppercase;
   font-family: "DM Sans";
   font-weight: 600;
@@ -512,7 +512,7 @@ main {
   margin: 2%;
 }
 
-.caption p {
+.caption {
   font-family: "Cousine";
   font-weight: 400;
   font-size: 1em;
@@ -583,7 +583,7 @@ footer p {
     padding: 3em 0;
   }
 
-  #about-me article p {
+  #about-me-desc {
     font-size: 1.3em;
     padding: 2em 1em 3em 1em;
   }
@@ -715,11 +715,11 @@ footer p {
     font-size: 1.4em;
   }
 
-  .caption h3 {
+  .caption-title {
     font-size: 1.3em;
   }
   
-  .caption p {
+  .caption {
     font-size: 1.3em;
     padding: 3%;
   }
